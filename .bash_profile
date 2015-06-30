@@ -2,6 +2,7 @@
 #   -----------------------------
 #   Change Prompt
 #   -----------------------------
+    #PS1="[\033[1;34m][\$(date +%H%M)][\u@\h:\w]$[\033[0m]"
 
 #   -----------------------------
 #   Other Aliases
@@ -60,3 +61,6 @@
 
 #   ADB
     export PATH=$PATH:/Applications/Android\ Studio.app/sdk/platform-tools/
+
+#   Git
+    alias gg="git fetch; git gg"
