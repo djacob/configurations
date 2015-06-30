@@ -2,7 +2,7 @@
 #   -----------------------------
 #   Change Prompt
 #   -----------------------------
-    #PS1="[\033[1;34m][\$(date +%H%M)][\u@\h:\w]$[\033[0m]"
+    export PS1="\[$(tput setaf 9)\]\u@\h \[$(tput setaf 2)\][\[$(tput setaf 8)\]\t\[$(tput setaf 2)\]]\[$(tput setaf 4)\] \w\[$(tput setaf 2)\]\n\\$\[$(tput sgr0)\] "
 
 #   -----------------------------
 #   Other Aliases
