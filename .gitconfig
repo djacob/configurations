@@ -1,0 +1,9 @@
+[user]
+	name = Jacob Duell
+    email = jacob.duell@altamiracorp.com
+
+[alias]
+    s = status
+    tree = log --all --graph --decorate=short --color --format=format:'%C(bold blue)%h%C(reset) %C(auto)%d%C(reset)\n         %C(black)[%cr]%C(reset)  %x09%C(black)%an: %s %C(reset)'
+    type = cat-file -t
+    dump = cat-file -p
