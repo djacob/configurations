@@ -9,6 +9,7 @@
 #   -----------------------------
     alias ls="ls -G"                            # ls with color
     alias ll="ls -arlthG"                       # ls with more information and color
+    alias grep='grep --color=auto'              # grep with color
     alias cp='cp -iv'                           # Preferred 'cp' implementation
     alias mv='mv -iv'                           # Preferred 'mv' implementation
     alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
@@ -64,3 +65,7 @@
 
 #   Git
     alias gg="git fetch; git gg"
+
+    source ~/.github-token
+
+
