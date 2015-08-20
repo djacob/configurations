@@ -1,6 +1,6 @@
 # Configuration Files
 
-Use Full Paths  (`~/configurations/.vimrc`) when simlinking config files
+Use full paths  (`~/configurations/.vimrc`) when symlinking config files
 
 ```bash
 ln -sf ~/configurations/.vimrc ~/.vimrc
