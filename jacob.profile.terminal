@@ -119,10 +119,11 @@
 	<key>BackgroundColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NLMCAw
-	IDAgMC44NwAQAYAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5T
-	T2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2JucHJ3
-	gouTlp+xtLkAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAuw==
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPEC8w
+	LjAyNTAyMTExNDg2IDAuMDI1MDIxMTE0ODYgMC4wMjUwMjExMTQ4NiAwLjg3ABABgALS
+	EBESE1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiEhRYTlNPYmplY3RfEA9OU0tl
+	eWVkQXJjaGl2ZXLRFxhUcm9vdIABCBEaIy0yNztBSE5bYpSWmJ2osbm8xdfa3wAAAAAA
+	AAEBAAAAAAAAABkAAAAAAAAAAAAAAAAAAADh
 	</data>
 	<key>BackgroundSettingsForInactiveWindows</key>
 	<true/>
@@ -152,7 +153,7 @@
 	<key>FontAntialias</key>
 	<true/>
 	<key>ProfileCurrentVersion</key>
-	<real>2.04</real>
+	<real>2.0499999999999998</real>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -162,12 +163,28 @@
 	ZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KSlJabpq+3usPV2N0AAAAAAAAB
 	AQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA3w==
 	</data>
+	<key>ShowActiveProcessArgumentsInTabTitle</key>
+	<false/>
+	<key>ShowActiveProcessArgumentsInTitle</key>
+	<false/>
+	<key>ShowActiveProcessInTitle</key>
+	<false/>
 	<key>ShowCommandKeyInTitle</key>
+	<false/>
+	<key>ShowComponentsWhenTabHasCustomTitle</key>
+	<false/>
+	<key>ShowDimensionsInTitle</key>
+	<false/>
+	<key>ShowRepresentedURLInTabTitle</key>
+	<false/>
+	<key>ShowRepresentedURLPathInTitle</key>
 	<true/>
 	<key>ShowShellCommandInTitle</key>
 	<false/>
+	<key>ShowTTYNameInTabTitle</key>
+	<false/>
 	<key>ShowTTYNameInTitle</key>
-	<true/>
+	<false/>
 	<key>ShowWindowSettingsNameInTitle</key>
 	<false/>
 	<key>TextBoldColor</key>
@@ -194,8 +211,12 @@
 	<true/>
 	<key>VisualBellOnlyWhenMuted</key>
 	<false/>
+	<key>columnCount</key>
+	<integer>150</integer>
 	<key>name</key>
 	<string>Jacob</string>
+	<key>rowCount</key>
+	<integer>33</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>
