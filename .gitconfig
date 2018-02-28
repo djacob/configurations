@@ -3,9 +3,16 @@
     email = jacob.duell@altamiracorp.com
 
 [alias]
+    chekcout = checkout
     s = status
+    gs = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(bold yellow)%d%C(reset)' --all
     g = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     gt = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     gg = !"git g -n 20"
+    staged = diff --staged
+    topd = fetch origin develop:develop
+    top = fetch origin master:master
+    localize = update-index  --assume-unchanged
+    unlocalize = update-index --no-assume-unchanged
 [push]
 	default = simple
