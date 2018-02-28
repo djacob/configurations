@@ -78,3 +78,5 @@
     source ~/.github-token
 
 
+#   Docker
+    alias dls="docker container ls --format \"table {{.Names}}\t{{.Ports}}\""
