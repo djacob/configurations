@@ -1,8 +1,13 @@
     
+    git_branch() {
+        branch="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)"
+        echo $branch | sed -E 's/^(.+)$/(\1)/'
+    }
+
 #   -----------------------------
 #   Change Prompt
 #   -----------------------------
-    export PS1="\[$(tput setaf 9)\]\u@\h \[$(tput setaf 2)\][\[$(tput setaf 8)\]\t\[$(tput setaf 2)\]]\[$(tput setaf 4)\] \w\[$(tput setaf 2)\]\n\\$\[$(tput sgr0)\] "
+    export PS1="\[$(tput setaf 9)\]\u@\h \[$(tput setaf 2)\][\[$(tput setaf 8)\]\t\[$(tput setaf 2)\]]\[$(tput setaf 4)\] \w \[$(tput setaf 2)\] \$(git_branch) \[$(tput setaf 2)\]\n\\$\[$(tput sgr0)\] "
 
 #   -----------------------------
 #   Other Aliases
