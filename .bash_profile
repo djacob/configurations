@@ -70,7 +70,10 @@
     export PATH=$PATH:/Applications/Android\ Studio.app/sdk/platform-tools/
 
 #   Git
-    alias gg="git fetch; git gg"
+    alias gg="git fetch; git gg -n 20"
+    alias gs="git fetch; git gs -n 20"
+    alias qgit='git'                            # qgit:         Always accidentally type q after git g
+    alias prune='~/scripts/prune.sh'
 
     source ~/.github-token
 
