@@ -32,6 +32,7 @@
     trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
     ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
     alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
+    alias mip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2' # mip: return all inet ip addresses (MAC)
 
 #   -----------------------------
 #   CD
