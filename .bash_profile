@@ -33,6 +33,14 @@
     ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
     alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
     alias mip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2' # mip: return all inet ip addresses (MAC)
+    pcheck () { 
+      if [ -z "$1" ] 
+        then
+          echo "Usage: pcheck <port> - finds any program running on the given port"
+          return
+      fi
+      lsof -i tcp:"$1"
+    }
 
 #   -----------------------------
 #   CD
@@ -76,7 +84,14 @@
     alias prune='~/scripts/prune.sh'
 
     source ~/.github-token
-
+    
+    if [ -f ~/.git-completion.sh ]; then
+        . ~/.git-completion.sh
+    fi
 
 #   Docker
     alias dls="docker container ls --format \"table {{.Names}}\t{{.Ports}}\""
+
+#   Misc
+    source ~/.bash_profile_misc
+    source ~/.upside_aws
